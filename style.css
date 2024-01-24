@@ -14,6 +14,7 @@
     padding-bottom: 31%;
     position: relative;
     width: 20em;
+
   }
   
 
@@ -25,7 +26,7 @@
     top: 20%;
     transform-origin: 50% 100%;
     width: 2.5%;
-    transform:rotate(70deg) ;
+    transform:rotate(70deg);
   }
 
   #minute {
@@ -52,3 +53,17 @@
   }
 
 
+  @keyframes rotate {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  #heure {
+    animation: rotate 43200s infinite linear;
+  }
+  #minute{
+    animation: rotate 3600s infinite linear;
+  }
+  #seconde{
+    animation: rotate 60s infinite linear;
+  }
